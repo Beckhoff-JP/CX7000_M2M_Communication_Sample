@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="ADS_Read" Id="{44f5605f-e049-4b27-991f-3cd32b45fc85}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ADS_Read
+VAR
+    fbReadInd    : ADSREADINDEX := (MINIDXGRP := 16#8E000000);(* Indication function block instance *)
+    fbReadRes    : ADSREADRES;(* Response function block instance *)
+    sNetId       : T_AmsNetID;
+    nPort        : T_AmsPort := 851;
+    nInvokeId    : UDINT;
+    nIdxGrp      : UDINT;
+    nIdxOffs     : UDINT;
+    cbLength     : UDINT;(* Requested read data/buffer byte size *)
+    cbRead       : UDINT;(* Returned read data/buffer byte size *)
+    pRead        : PVOID;(* Pointer to returned read data/buffer *)
+    nErrID       : UDINT;(* Read indication result error code *)
+    nCounter     : INT;(* Server data *)
+	stSample 	 : ST_sample;
+	fbSystemTime   : GETSYSTEMTIME;
+    timeAsFileTime : T_FILETIME;
+    timeAsDT       : DT;
+	
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbReadRes( RESPOND := FALSE );(* Reset response function block *) 
+ fbReadInd( CLEAR := FALSE );(* Trigger indication function block *) 
+ IF fbReadInd.VALID THEN(* Check for new indication *) 
+ 
+      sNetID := fbReadInd.NETID; 
+      nPort := fbReadInd.PORT; 
+      nInvokeID := fbReadInd.INVOKEID; 
+      nIdxGrp := fbReadInd.IDXGRP; 
+      nIdxOffs := fbReadInd.IDXOFFS; 
+      cbLength := fbReadInd.LENGTH; 
+ 
+      cbRead := 0; 
+      pRead := 0; 
+      nErrID     := DEVICE_SRVNOTSUPP; 
+ 
+      
+     CASE nIdxGrp OF 
+          (*------------------------------------------------------------------------------------*) 
+          16#8E000001: 
+               CASE nIdxOffs OF 
+                    0:(* Increment counter value *) 
+                         IF cbLength >= SIZEOF(nCounter) THEN 
+                              nCounter := nCounter + 1; 
+                              cbRead := SIZEOF(nCounter); 
+                              pRead := ADR(nCounter); 
+                              nErrID := NOERR; 
+                         ELSE (* ADS error (example): Invalid size *) 
+                              nErrID := DEVICE_INVALIDSIZE; 
+                         END_IF 
+               ELSE (* ADS error (example): Invalid index offset *) 
+                    nErrID := DEVICE_INVALIDOFFSET; 
+               END_CASE 
+          (*------------------------------------------------------------------------------------*) 
+          16#8E000002: 
+               CASE nIdxOffs OF 
+                    0:(* Decrement counter value *) 
+                         IF cbLength >= SIZEOF(nCounter) THEN 
+                              nCounter := nCounter - 1; 
+                              cbRead := SIZEOF(nCounter); 
+                              pRead := ADR(nCounter); 
+                              nErrID := NOERR; 
+                         ELSE(* ADS error (example): Invalid size *) 
+                              nErrID := DEVICE_INVALIDSIZE; 
+                         END_IF 
+               ELSE (* ADS error (example): Invalid index offset *) 
+                    nErrID := DEVICE_INVALIDOFFSET; 
+               END_CASE 
+          (*------------------------------------------------------------------------------------*) 
+          16#8E000003: 
+               CASE nIdxOffs OF 
+                    0:(* Reset counter value *) 
+                         IF cbLength >= SIZEOF(nCounter) THEN 
+                              nCounter := 0; 
+                              cbRead := SIZEOF(nCounter); 
+                              pRead := ADR(nCounter); 
+                              nErrID := NOERR; 
+                         ELSE(* ADS error (example): Invalid size *) 
+                              nErrID := DEVICE_INVALIDSIZE; 
+                         END_IF 
+               ELSE (* ADS error (example): ervice is not supported by server *) 
+                    nErrID := DEVICE_SRVNOTSUPP; 
+               END_CASE 
+			   
+			16#8E000004:
+				CASE nIdxOffs OF
+					0:(* Modify structured variable *) 
+                         IF cbLength >= SIZEOF(stSample) THEN 
+                            stSample.id := stSample.id + 1;
+							stSample.title := 'TEST';
+							fbSystemTime( timeLoDW=>timeAsFileTime.dwLowDateTime, timeHiDW=>timeAsFileTime.dwHighDateTime );
+							stSample.datetime := FILETIME_TO_DT( timeAsFileTime );
+                              cbRead := SIZEOF(stSample); 
+                              pRead := ADR(stSample); 
+                              nErrID := NOERR; 
+                         ELSE(* ADS error (example): Invalid size *) 
+                              nErrID := DEVICE_INVALIDSIZE; 
+                         END_IF 
+				END_CASE
+ 
+     ELSE (* ADS error (example): Invalid index group *) 
+          nErrID := DEVICE_INVALIDGRP; 
+     END_CASE 
+      
+     fbReadRes(     NETID := sNetID, 
+                    PORT := nPort, 
+                    INVOKEID := nInvokeID, 
+                    LEN := cbRead, 
+                    DATAADDR := pRead, 
+                    RESULT := nErrID, 
+                    RESPOND := TRUE );(* Send read response *) 
+                     
+     fbReadInd( CLEAR := TRUE ); (* Clear indication entry *) 
+END_IF
+]]></ST>
+    </Implementation>
+    <LineIds Name="ADS_Read">
+      <LineId Id="18" Count="61" />
+      <LineId Id="110" Count="2" />
+      <LineId Id="115" Count="2" />
+      <LineId Id="123" Count="0" />
+      <LineId Id="128" Count="0" />
+      <LineId Id="124" Count="0" />
+      <LineId Id="118" Count="4" />
+      <LineId Id="113" Count="1" />
+      <LineId Id="80" Count="13" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="152" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

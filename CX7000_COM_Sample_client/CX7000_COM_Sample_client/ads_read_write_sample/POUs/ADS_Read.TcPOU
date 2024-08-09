@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="ADS_Read" Id="{9f3fc1da-0673-4c20-9e79-5bd2358ea3bc}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ADS_Read
+VAR
+	fbReadReq  : ADSREADEX := ( NETID := '', PORT := 851, TMOUT := DEFAULT_ADS_TIMEOUT );
+    bIncrement : BOOL;(* Rising edge at this variable starts command execution *)
+    bDecrement : BOOL;(* Rising edge at this variable starts command execution *)
+    bReset     : BOOL;(* Rising edge at this variable starts command execution *)
+    bOther     : BOOL;(* Rising edge at this variable starts command execution *)
+    
+    nReadState     : BYTE;
+    bBusy      : BOOL;
+    bError     : BOOL;
+    nErrID     : UDINT;
+    cbRead     : UDINT;
+    
+    nCounter   : INT;(* Server data to be read *)
+	stSample	: ST_Sample;
+	bGetStructure: BOOL;
+	
+	
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbReadReq.NETID := '5.143.107.166.1.1'; // CX7000 target NetID
+
+CASE nReadState OF
+    0:
+        IF bIncrement OR bDecrement OR bReset OR bOther OR bGetStructure THEN
+            bBusy := TRUE;
+            bError := FALSE;
+            nErrID := 0;
+            
+            fbReadReq( READ := FALSE );
+
+            IF bIncrement THEN(* Incement counter value *)
+                bIncrement := FALSE;
+                fbReadReq( IDXGRP := 16#8E000001, IDXOFFS := 0, LEN := SIZEOF(nCounter), DESTADDR := ADR(nCounter), READ := TRUE );
+            ELSIF bDecrement THEN(* Decrement counter value *)
+                bDecrement := FALSE;
+                fbReadReq( IDXGRP := 16#8E000002, IDXOFFS := 0, LEN := SIZEOF(nCounter), DESTADDR := ADR(nCounter), READ := TRUE );
+            ELSIF bReset THEN(* Reset counter value *)
+                bReset := FALSE;
+                fbReadReq( IDXGRP := 16#8E000003, IDXOFFS := 0, LEN := SIZEOF(nCounter), DESTADDR := ADR(nCounter), READ := TRUE );
+			ELSIF bGetStructure THEN
+				bGetStructure := FALSE;
+				fbReadReq( IDXGRP := 16#8E000004, IDXOFFS := 0, LEN := SIZEOF(stSample), DESTADDR := ADR(stSample), READ := TRUE );
+            ELSIF bOther THEN(* Call unsupported function *)
+                bOther := FALSE;
+                fbReadReq( IDXGRP := 16#8E000005, IDXOFFS := 0, LEN := SIZEOF(nCounter), DESTADDR := ADR(nCounter), READ := TRUE );
+            END_IF
+            
+            nReadState := 1;
+        END_IF
+    1:
+        fbReadReq( READ := FALSE, BUSY=>bBusy, ERR=>bError, ERRID=>nErrID, COUNT_R=>cbRead );
+        IF NOT bBusy THEN
+            IF NOT bError THEN
+                nReadState := 0;(* Success *)
+            ELSE
+                nReadState := 100;(* Error *)
+            END_IF
+        END_IF
+        
+    100:(* TODO::Implement error handler *)
+        nReadState := 0;
+        
+END_CASE
+]]></ST>
+    </Implementation>
+    <LineIds Name="ADS_Read">
+      <LineId Id="175" Count="43" />
+      <LineId Id="85" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

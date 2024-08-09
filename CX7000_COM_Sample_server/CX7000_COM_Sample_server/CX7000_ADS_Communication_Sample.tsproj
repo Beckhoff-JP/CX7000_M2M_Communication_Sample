@@ -1,0 +1,1443 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.53">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{41ED9519-F005-F75E-C949-7BAD9F19538C}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..63] OF BYTE</Name>
+			<BitSize>512</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>64</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000300000044}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..67] OF BYTE</Name>
+			<BitSize>544</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>68</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-0020000000F0}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..29] OF BYTE</Name>
+			<BitSize>240</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>30</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000040}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..7] OF BYTE</Name>
+			<BitSize>64</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>8</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ff000000000000ff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ff000000000000ff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Project ProjectGUID="{DAA4FDB3-D5CA-4CDC-898B-E66630704C90}" TargetNetId="5.143.107.166.1.1" ShowHideConfigurations="#x6">
+		<System>
+			<Licenses>
+				<Target>
+					<ManualSelect>{1EEBBAAA-51E1-4750-9D6A-7B04116EA32B}</ManualSelect>
+					<ManualSelect>{777F1598-583B-4503-99BB-7C02E0ABD97E}</ManualSelect>
+				</Target>
+			</Licenses>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project GUID="{045E7ADE-A506-455E-AD88-3C4997CCDE5D}" Name="ads_com_sample" PrjFilePath="ads_com_sample\ads_com_sample.plcproj" TmcFilePath="ads_com_sample\ads_com_sample.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="ads_com_sample\ads_com_sample.tmc" TmcHash="{EA2E70FA-1594-7D8F-F07D-31EB2DC5CF44}">
+					<Name>ads_com_sample Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>EIP.eip_input</Name>
+							<Type GUID="{41ED9519-F005-F75E-C949-7BAD9F19538C}">ARRAY [0..63] OF BYTE</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" AreaNo="1">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>EIP.eip_output</Name>
+							<Type GUID="{41ED9519-F005-F75E-C949-7BAD9F19538C}">ARRAY [0..63] OF BYTE</Type>
+						</Var>
+					</Vars>
+					<UnrestoredVarLinks ImportTime="2024-08-08T11:19:47">
+						<OwnerA Name="InputDst" Prefix="TIPC^ads_com_sample^ads_com_sample Instance" Type="1">
+							<OwnerB Name="TIID^Device 6 (ECAT EIP Scanner (EL6652))^Box 5 (Box 1 (TC EtherNet/IP Slave))">
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values" Size="8" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_1" Size="8" OffsA="8" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_10" Size="8" OffsA="80" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_11" Size="8" OffsA="88" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_12" Size="8" OffsA="96" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_13" Size="8" OffsA="104" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_14" Size="8" OffsA="112" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_15" Size="8" OffsA="120" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_16" Size="8" OffsA="128" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_17" Size="8" OffsA="136" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_18" Size="8" OffsA="144" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_19" Size="8" OffsA="152" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_2" Size="8" OffsA="16" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_20" Size="8" OffsA="160" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_21" Size="8" OffsA="168" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_22" Size="8" OffsA="176" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_23" Size="8" OffsA="184" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_24" Size="8" OffsA="192" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_25" Size="8" OffsA="200" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_26" Size="8" OffsA="208" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_27" Size="8" OffsA="216" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_28" Size="8" OffsA="224" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_29" Size="8" OffsA="232" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_3" Size="8" OffsA="24" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_30" Size="8" OffsA="240" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_31" Size="8" OffsA="248" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_32" Size="8" OffsA="256" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_33" Size="8" OffsA="264" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_34" Size="8" OffsA="272" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_35" Size="8" OffsA="280" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_36" Size="8" OffsA="288" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_37" Size="8" OffsA="296" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_38" Size="8" OffsA="304" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_39" Size="8" OffsA="312" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_4" Size="8" OffsA="32" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_40" Size="8" OffsA="320" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_41" Size="8" OffsA="328" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_42" Size="8" OffsA="336" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_43" Size="8" OffsA="344" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_44" Size="8" OffsA="352" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_45" Size="8" OffsA="360" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_46" Size="8" OffsA="368" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_47" Size="8" OffsA="376" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_48" Size="8" OffsA="384" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_49" Size="8" OffsA="392" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_5" Size="8" OffsA="40" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_50" Size="8" OffsA="400" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_51" Size="8" OffsA="408" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_52" Size="8" OffsA="416" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_53" Size="8" OffsA="424" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_54" Size="8" OffsA="432" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_55" Size="8" OffsA="440" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_56" Size="8" OffsA="448" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_57" Size="8" OffsA="456" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_58" Size="8" OffsA="464" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_59" Size="8" OffsA="472" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_6" Size="8" OffsA="48" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_60" Size="8" OffsA="480" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_61" Size="8" OffsA="488" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_62" Size="8" OffsA="496" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_63" Size="8" OffsA="504" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_7" Size="8" OffsA="56" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_8" Size="8" OffsA="64" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_input" TypeA="ARRAY [0..63] OF BYTE" InOutA="0" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_9" Size="8" OffsA="72" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+						<OwnerA Name="OutputSrc" Prefix="TIPC^ads_com_sample^ads_com_sample Instance" Type="2">
+							<OwnerB Name="TIID^Device 6 (ECAT EIP Scanner (EL6652))^Box 5 (Box 1 (TC EtherNet/IP Slave))">
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values" Size="8" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_1" Size="8" OffsA="8" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_10" Size="8" OffsA="80" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_11" Size="8" OffsA="88" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_12" Size="8" OffsA="96" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_13" Size="8" OffsA="104" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_14" Size="8" OffsA="112" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_15" Size="8" OffsA="120" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_16" Size="8" OffsA="128" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_17" Size="8" OffsA="136" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_18" Size="8" OffsA="144" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_19" Size="8" OffsA="152" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_2" Size="8" OffsA="16" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_20" Size="8" OffsA="160" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_21" Size="8" OffsA="168" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_22" Size="8" OffsA="176" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_23" Size="8" OffsA="184" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_24" Size="8" OffsA="192" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_25" Size="8" OffsA="200" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_26" Size="8" OffsA="208" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_27" Size="8" OffsA="216" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_28" Size="8" OffsA="224" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_29" Size="8" OffsA="232" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_3" Size="8" OffsA="24" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_30" Size="8" OffsA="240" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_31" Size="8" OffsA="248" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_32" Size="8" OffsA="256" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_33" Size="8" OffsA="264" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_34" Size="8" OffsA="272" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_35" Size="8" OffsA="280" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_36" Size="8" OffsA="288" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_37" Size="8" OffsA="296" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_38" Size="8" OffsA="304" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_39" Size="8" OffsA="312" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_4" Size="8" OffsA="32" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_40" Size="8" OffsA="320" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_41" Size="8" OffsA="328" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_42" Size="8" OffsA="336" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_43" Size="8" OffsA="344" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_44" Size="8" OffsA="352" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_45" Size="8" OffsA="360" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_46" Size="8" OffsA="368" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_47" Size="8" OffsA="376" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_48" Size="8" OffsA="384" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_49" Size="8" OffsA="392" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_5" Size="8" OffsA="40" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_50" Size="8" OffsA="400" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_51" Size="8" OffsA="408" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_52" Size="8" OffsA="416" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_53" Size="8" OffsA="424" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_54" Size="8" OffsA="432" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_55" Size="8" OffsA="440" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_56" Size="8" OffsA="448" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_57" Size="8" OffsA="456" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_58" Size="8" OffsA="464" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_59" Size="8" OffsA="472" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_6" Size="8" OffsA="48" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_60" Size="8" OffsA="480" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_61" Size="8" OffsA="488" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_62" Size="8" OffsA="496" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_63" Size="8" OffsA="504" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_7" Size="8" OffsA="56" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_8" Size="8" OffsA="64" RestoreInfo="ANotFound"/>
+								<Link VarA="MAIN.eip_output" TypeA="ARRAY [0..63] OF BYTE" InOutA="1" GuidA="{41ED9519-F005-F75E-C949-7BAD9F19538C}" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_9" Size="8" OffsA="72" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<Contexts>
+						<Context>
+							<Id>0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010030</OTCID>
+							</ManualConfig>
+							<Priority>20</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+		</Plc>
+		<Io>
+			<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.143.107.166.2.1" RemoteName="Device 1 (EtherCAT)" InfoImageId="2">
+				<Name>Device 1 (EtherCAT)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>536870912</Address>
+						<Offset>65536</Offset>
+						<Size>16384</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="1" AddrType="9" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="1" BoxType="9099">
+					<Name>Term 1 (EK1200)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001b58" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-7000 EtherCAT Power supply (1,5A E-Bus)" Desc="EK1200" PortABoxInfo="#x00ffffff"/>
+					<Box Id="2" BoxType="9110" BoxFlags="#x00000020">
+						<Name>Term 2 (EL6652)</Name>
+						<ImageId>1001</ImageId>
+						<EtherCAT SlaveType="5" AdsServerAddress="058f6ba607010000" FixedAdsServerNetId="true" PdiType="#x0008" ExecIo="true" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x19fc3052" RevisionNo="#x00110000" InfoDataAddr="true" InfoDataNetId="true" OwnAddrExtern="true" RepeatSupport="true" TimeoutStateChange1="10000" TimeoutStateChange3="20000" TimeoutMailbox2="2000" GenerateOwnNetId="true" InitializeOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL6652 EtherNet/IP Scanner (Master)" Desc="EL6652" PortABoxInfo="#x01000001">
+							<SyncMan>001000022600010001000000400000020002001026010000</SyncMan>
+							<SyncMan>001200022200010002000000400000020002001222010000</SyncMan>
+							<SyncMan>001448006400010003000000000000000200001464010000</SyncMan>
+							<SyncMan>002048002000010004000000000000000200002020010000</SyncMan>
+							<Fmmu>0000000000000000001400020100000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000002000010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010000400140004</BootStrapData>
+							<Pdo Name="Box 5 (Box 1 (TC EtherNet/IP Slave))_In" Index="#x1a00" Flags="#x0001" SyncMan="3">
+								<Entry Name="Box 5 (Box 1 (TC EtherNet/IP Slave))_State" Index="#x6000" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+								<Entry Name="Box 5 (Box 1 (TC EtherNet/IP Slave)) Connection 1 (Input/Output)_In" Index="#x6001" Sub="#x01" Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-000300000044}">ARRAY [0..67] OF BYTE</Type>
+								</Entry>
+								<Entry Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-0020000000F0}">ARRAY [0..29] OF BYTE</Type>
+								</Entry>
+								<Entry Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-002000000040}">ARRAY [0..7] OF BYTE</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="Box 5 (Box 1 (TC EtherNet/IP Slave))_Out" Index="#x1600" InOut="1" Flags="#x0001" SyncMan="2">
+								<Entry Name="Box 5 (Box 1 (TC EtherNet/IP Slave))_Ctrl" Index="#x7000" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+								<Entry Name="Box 5 (Box 1 (TC EtherNet/IP Slave)) Connection 1 (Input/Output)_Out" Index="#x7001" Sub="#x01" Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-000300000044}">ARRAY [0..67] OF BYTE</Type>
+								</Entry>
+								<Entry Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-0020000000F0}">ARRAY [0..29] OF BYTE</Type>
+								</Entry>
+								<Entry Flags="#x00000100">
+									<Type GUID="{18071995-0000-0000-0000-002000000040}">ARRAY [0..7] OF BYTE</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="ECatState" Index="#x1bff" Flags="#x0001" SyncMan="3">
+								<Entry Name="ECatState" Index="#xf101" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+							</Pdo>
+							<Pdo Name="ECatCtrl" Index="#x17ff" InOut="1" Flags="#x0001" SyncMan="2">
+								<Entry Name="ECatCtrl" Index="#xf201" Sub="#x01" Flags="#x00000100">
+									<Type>UINT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="5001"/>
+						</EtherCAT>
+					</Box>
+					<Box Id="3" BoxType="9099">
+						<Name>Term 3 (EL9011)</Name>
+						<ImageId>1002</ImageId>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000002"/>
+					</Box>
+				</Box>
+				<EtherCAT/>
+			</Device>
+			<Device Id="2" DevType="10">
+				<Name>Device 2 (NOV-DP-RAM)</Name>
+				<AddressInfo>
+					<Io_Ccat>
+						<Address>0</Address>
+						<Size>8192</Size>
+						<CcatAccessSlot>11</CcatAccessSlot>
+						<CcatSlotAddress>268443648</CcatSlotAddress>
+						<CcatSlotParam>656386</CcatSlotParam>
+						<IoAddress>0</IoAddress>
+					</Io_Ccat>
+				</AddressInfo>
+				<Vars VarGrpType="1" InsertType="1">
+					<Name>Inputs</Name>
+				</Vars>
+				<Vars VarGrpType="2" InsertType="1">
+					<Name>Outputs</Name>
+				</Vars>
+				<Image Id="3" ImageFlags="#x00000042" AddrType="5" ImageType="5">
+					<Name>Image</Name>
+				</Image>
+				<DpRam/>
+			</Device>
+			<Device Id="3" DevType="161" AmsNetId="5.143.107.166.4.1" RemoteName="Device 3 (CX7000)_Devices">
+				<Name>Device 3 (CX7000)</Name>
+				<DevData>3412000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DevData>
+				<Image Id="4" AddrType="1" ImageType="3" SizeIn="6" SizeOut="20">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="4" BoxType="9592" BoxFlags="#x00000020" AmsPort="1000">
+					<Name>Term 1 (CX7028)</Name>
+					<ImageId>1003</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0005" SuFlags="5" SyncUnitBits="false" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x1b746032" RevisionNo="#x00760000" InfoDataState="false" TimeoutMailbox2="5000" DownloadSlotCfg="true" CheckRevisionNoType="3" PortPhys="49" DownloadSlotCfgIP="true" MaxSlotCount="8" SlotPdoIncrement="16" SlotIndexIncrement="16" Type="CX7028-0000-0118" Desc="CX7028">
+						<SyncMan>001040002600010001000000400080004000001026010000</SyncMan>
+						<SyncMan>801040002200010002000000400080004000801022010000</SyncMan>
+						<SyncMan>001104002400010003000000000000000400001124010000</SyncMan>
+						<SyncMan>00120a002000010004000000000000000a00001220010000</SyncMan>
+						<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001200010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010f400f410f400</BootStrapData>
+						<Pdo Name="DEV Inputs Device" Index="#x1a80" Flags="#x0011" SyncMan="3">
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+							</Entry>
+							<Entry Name="Diag" Index="#xf600" Sub="#x0d">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="TxPDO State" Index="#xf600" Sub="#x0e">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input cycle counter" Index="#xf600" Sub="#x0f">
+								<Type>BIT2</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Inputs Channel 1" Index="#x1a00" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6000" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Inputs Channel 2" Index="#x1a10" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6010" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7000" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 2" Index="#x1610" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7010" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Input Channel 1" Index="#x1a20" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6020" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Input Channel 2" Index="#x1a30" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6030" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 1" Index="#x1620" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7020" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DIO_2x Outputs Channel 2" Index="#x1630" InOut="1" Flags="#x0291" SyncMan="2">
+							<Entry Name="Output" Index="#x7030" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Input Channel 1" Index="#x1a40" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6040" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Input Channel 2" Index="#x1a50" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6050" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Inputs Channel 1" Index="#x1a60" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6060" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI_2x Inputs Channel 2" Index="#x1a70" Flags="#x0291" SyncMan="3">
+							<Entry Name="Input" Index="#x6070" Flags="#x00001000">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Slot Name="InOut[1..2]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>6298484</ModuleIdent>
+							<ModuleIdent>7347060</ModuleIdent>
+							<ModuleIdent>3152756</ModuleIdent>
+							<Module Id="#x03090001" Type="DIO_2x" Class="">
+								<Name>Module 1 (DIO_2x)</Name>
+								<ImageId>408</ImageId>
+								<ModuleData>02000000741b3000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6656</PdoIndex>
+								<PdoIndex>6672</PdoIndex>
+								<PdoIndex>5632</PdoIndex>
+								<PdoIndex>5648</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+						<Slot Name="InOut[3..4]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>7028</ModuleIdent>
+							<ModuleIdent>5249908</ModuleIdent>
+							<Module Id="#x03090002" Type="DIO_2x" Class="">
+								<Name>Module 3 (DIO_2x)</Name>
+								<ImageId>408</ImageId>
+								<ModuleData>02000000741b0000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6688</PdoIndex>
+								<PdoIndex>6704</PdoIndex>
+								<PdoIndex>5664</PdoIndex>
+								<PdoIndex>5680</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+						<Slot Name="In[5..6]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>1055604</ModuleIdent>
+							<Module Id="#x03090003" Type="DI_2x" Class="">
+								<Name>Module 5 (DI_2x)</Name>
+								<ImageId>408</ImageId>
+								<ModuleData>02000000741b1000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6720</PdoIndex>
+								<PdoIndex>6736</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+						<Slot Name="In[7..8]">
+							<SlotData>0000010001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>4201332</ModuleIdent>
+							<ModuleIdent>2104180</ModuleIdent>
+							<Module Id="#x03090004" Type="DI_2x" Class="">
+								<Name>Module 7 (DI_2x)</Name>
+								<ImageId>408</ImageId>
+								<ModuleData>02000000741b2000000004000000000000000000000000000000000000000000</ModuleData>
+								<PdoIndex>6752</PdoIndex>
+								<PdoIndex>6768</PdoIndex>
+								<CoeProfile ProfileNo="#x00001389"/>
+							</Module>
+						</Slot>
+						<Slot Name="Empty Slot">
+							<SlotData>0000000001000400100000001000000000000000000000000000000000000000</SlotData>
+							<ModuleIdent>0</ModuleIdent>
+						</Slot>
+					</EtherCAT>
+				</Box>
+			</Device>
+			<Device Id="4" DevType="11" AmsPort="28676">
+				<Name>Device 4 (COM Port)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>268435456</Address>
+						<Offset>131072</Offset>
+						<Size>512</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="5" AddrType="1" ImageType="1">
+					<Name>Image</Name>
+				</Image>
+				<Serial Baud="38400" Parity="1" StopBit="1" RsType="1" WaitTimeToShutdown="60" BufSize="4096" DataBit="8" Timeout="300"/>
+			</Device>
+			<Device Id="5" DevType="11" AmsPort="28677">
+				<Name>Device 5 (COM Port)</Name>
+				<AddressInfo>
+					<Ccat>
+						<Address>268435456</Address>
+						<Offset>196608</Offset>
+						<Size>512</Size>
+						<BaseAddr>0</BaseAddr>
+						<BusNo>65535</BusNo>
+						<SlotNo>0</SlotNo>
+					</Ccat>
+				</AddressInfo>
+				<Image Id="6" AddrType="1" ImageType="1">
+					<Name>Image</Name>
+				</Image>
+				<Serial Baud="38400" Parity="1" StopBit="1" RsType="2" WaitTimeToShutdown="60" BufSize="4096" DataBit="8" Timeout="300"/>
+			</Device>
+			<Device Id="6" DevType="151" AmsPort="28678" AmsNetId="5.143.107.166.7.1" RemoteName="Device 6 (ECAT EIP Scanner (EL6652))">
+				<Name>Device 6 (ECAT EIP Scanner (EL6652))</Name>
+				<AddressInfo>
+					<Ecat>
+						<EtherCATDeviceId>2</EtherCATDeviceId>
+						<EtherCATDeviceName>TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL6652)</EtherCATDeviceName>
+					</Ecat>
+				</AddressInfo>
+				<Image Id="7" AddrType="4" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="5" BoxType="9134">
+					<Name>Box 5 (Box 1 (TC EtherNet/IP Slave))</Name>
+					<Comment><![CDATA[<INFO>
+
+</INFO>
+<EDS>
+C:\TwinCAT\3.1\Config\Io\EtherNetIP\Box 1 (TC EtherNet_IP Slave)_20240808_104409.eds
+</EDS>
+]]></Comment>
+					<ImageId>263</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>State</Name>
+							<Comment><![CDATA[0x8000 = Remote Node has no connections
+0x4000 = Remote Node is not reachable
+0x2000 = TCP Client: initialization failed
+0x1000 = UDP Client: initialization failed
+0x0X00 = reserved
+0x0001 = 1st Connection disconnected
+0x0002 = 2nd Connection disconnected
+0x0004 = 3rd Connection disconnected
+   ...
+0x0080 = 8th Connection disconnected
+]]></Comment>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>Ctrl</Name>
+							<Type>UINT</Type>
+						</Var>
+					</Vars>
+					<EthernetIp NewSlavePara="0500000000000000000000000000000000000000000000000000000000000000000000000c0000006c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010ba8c000000000000000000000800001001e000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" EdsFilePath="Box 1 (TC EtherNet_IP Slave)_20240808_104409.eds">
+						<MasterConnection Id="1" ConnectionPara="00000000000000007435000000000000000055aaffaa550000000000000000000000000000000000000000000000000074350000000000002b80d5d5802b0000000000000000000000000000000000000000000000000000743500005580802b00000000000000000000002b000000000000000000000000000000000000000074350000000055aaffaa55000000000000000000000000000000000000000000000000000000000074350000000000000000000000000000000000000000000000000000000000000000000000000000743500000000000000000000000000000000000000000000000000000000000000000000000000007435000000000055aaffaa550000000000000000000000000000000000000000000000000000000074350000002b80d5d5802b0000000000000000000000000000000000000000000000000000000000743500000000000000000000000000002b80d5d5000000000000000000000000000000000000000074350000aaffaa5500000000000000000000000000000000000000000000000000000000" AssemblyPara="010000a0280000002800000000000000000000008100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000440000000000000000000000020000008200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000440000000100000000000000020000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" ConnectionType="-2147483587">
+							<Name>Connection 1 (Input/Output)</Name>
+							<ImageId>86</ImageId>
+							<Vars VarGrpType="1" InsertType="1">
+								<Name>Inputs</Name>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ ConnCtrl</Name>
+									<Type>UDINT</Type>
+									<BitOffs>16</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values</Name>
+									<Type>BYTE</Type>
+									<BitOffs>48</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_1</Name>
+									<Type>BYTE</Type>
+									<BitOffs>56</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_2</Name>
+									<Type>BYTE</Type>
+									<BitOffs>64</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_3</Name>
+									<Type>BYTE</Type>
+									<BitOffs>72</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_4</Name>
+									<Type>BYTE</Type>
+									<BitOffs>80</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_5</Name>
+									<Type>BYTE</Type>
+									<BitOffs>88</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_6</Name>
+									<Type>BYTE</Type>
+									<BitOffs>96</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_7</Name>
+									<Type>BYTE</Type>
+									<BitOffs>104</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_8</Name>
+									<Type>BYTE</Type>
+									<BitOffs>112</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_9</Name>
+									<Type>BYTE</Type>
+									<BitOffs>120</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_10</Name>
+									<Type>BYTE</Type>
+									<BitOffs>128</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_11</Name>
+									<Type>BYTE</Type>
+									<BitOffs>136</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_12</Name>
+									<Type>BYTE</Type>
+									<BitOffs>144</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_13</Name>
+									<Type>BYTE</Type>
+									<BitOffs>152</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_14</Name>
+									<Type>BYTE</Type>
+									<BitOffs>160</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_15</Name>
+									<Type>BYTE</Type>
+									<BitOffs>168</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_16</Name>
+									<Type>BYTE</Type>
+									<BitOffs>176</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_17</Name>
+									<Type>BYTE</Type>
+									<BitOffs>184</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_18</Name>
+									<Type>BYTE</Type>
+									<BitOffs>192</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_19</Name>
+									<Type>BYTE</Type>
+									<BitOffs>200</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_20</Name>
+									<Type>BYTE</Type>
+									<BitOffs>208</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_21</Name>
+									<Type>BYTE</Type>
+									<BitOffs>216</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_22</Name>
+									<Type>BYTE</Type>
+									<BitOffs>224</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_23</Name>
+									<Type>BYTE</Type>
+									<BitOffs>232</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_24</Name>
+									<Type>BYTE</Type>
+									<BitOffs>240</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_25</Name>
+									<Type>BYTE</Type>
+									<BitOffs>248</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_26</Name>
+									<Type>BYTE</Type>
+									<BitOffs>256</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_27</Name>
+									<Type>BYTE</Type>
+									<BitOffs>264</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_28</Name>
+									<Type>BYTE</Type>
+									<BitOffs>272</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_29</Name>
+									<Type>BYTE</Type>
+									<BitOffs>280</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_30</Name>
+									<Type>BYTE</Type>
+									<BitOffs>288</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_31</Name>
+									<Type>BYTE</Type>
+									<BitOffs>296</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_32</Name>
+									<Type>BYTE</Type>
+									<BitOffs>304</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_33</Name>
+									<Type>BYTE</Type>
+									<BitOffs>312</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_34</Name>
+									<Type>BYTE</Type>
+									<BitOffs>320</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_35</Name>
+									<Type>BYTE</Type>
+									<BitOffs>328</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_36</Name>
+									<Type>BYTE</Type>
+									<BitOffs>336</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_37</Name>
+									<Type>BYTE</Type>
+									<BitOffs>344</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_38</Name>
+									<Type>BYTE</Type>
+									<BitOffs>352</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_39</Name>
+									<Type>BYTE</Type>
+									<BitOffs>360</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_40</Name>
+									<Type>BYTE</Type>
+									<BitOffs>368</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_41</Name>
+									<Type>BYTE</Type>
+									<BitOffs>376</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_42</Name>
+									<Type>BYTE</Type>
+									<BitOffs>384</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_43</Name>
+									<Type>BYTE</Type>
+									<BitOffs>392</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_44</Name>
+									<Type>BYTE</Type>
+									<BitOffs>400</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_45</Name>
+									<Type>BYTE</Type>
+									<BitOffs>408</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_46</Name>
+									<Type>BYTE</Type>
+									<BitOffs>416</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_47</Name>
+									<Type>BYTE</Type>
+									<BitOffs>424</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_48</Name>
+									<Type>BYTE</Type>
+									<BitOffs>432</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_49</Name>
+									<Type>BYTE</Type>
+									<BitOffs>440</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_50</Name>
+									<Type>BYTE</Type>
+									<BitOffs>448</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_51</Name>
+									<Type>BYTE</Type>
+									<BitOffs>456</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_52</Name>
+									<Type>BYTE</Type>
+									<BitOffs>464</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_53</Name>
+									<Type>BYTE</Type>
+									<BitOffs>472</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_54</Name>
+									<Type>BYTE</Type>
+									<BitOffs>480</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_55</Name>
+									<Type>BYTE</Type>
+									<BitOffs>488</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_56</Name>
+									<Type>BYTE</Type>
+									<BitOffs>496</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_57</Name>
+									<Type>BYTE</Type>
+									<BitOffs>504</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_58</Name>
+									<Type>BYTE</Type>
+									<BitOffs>512</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_59</Name>
+									<Type>BYTE</Type>
+									<BitOffs>520</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_60</Name>
+									<Type>BYTE</Type>
+									<BitOffs>528</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_61</Name>
+									<Type>BYTE</Type>
+									<BitOffs>536</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_62</Name>
+									<Type>BYTE</Type>
+									<BitOffs>544</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Outputs ^ values_63</Name>
+									<Type>BYTE</Type>
+									<BitOffs>552</BitOffs>
+								</Var>
+							</Vars>
+							<Vars VarGrpType="2" InsertType="1">
+								<Name>Outputs</Name>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ ConnState</Name>
+									<Type>UDINT</Type>
+									<BitOffs>16</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values</Name>
+									<Type>BYTE</Type>
+									<BitOffs>48</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_1</Name>
+									<Type>BYTE</Type>
+									<BitOffs>56</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_2</Name>
+									<Type>BYTE</Type>
+									<BitOffs>64</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_3</Name>
+									<Type>BYTE</Type>
+									<BitOffs>72</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_4</Name>
+									<Type>BYTE</Type>
+									<BitOffs>80</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_5</Name>
+									<Type>BYTE</Type>
+									<BitOffs>88</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_6</Name>
+									<Type>BYTE</Type>
+									<BitOffs>96</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_7</Name>
+									<Type>BYTE</Type>
+									<BitOffs>104</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_8</Name>
+									<Type>BYTE</Type>
+									<BitOffs>112</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_9</Name>
+									<Type>BYTE</Type>
+									<BitOffs>120</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_10</Name>
+									<Type>BYTE</Type>
+									<BitOffs>128</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_11</Name>
+									<Type>BYTE</Type>
+									<BitOffs>136</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_12</Name>
+									<Type>BYTE</Type>
+									<BitOffs>144</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_13</Name>
+									<Type>BYTE</Type>
+									<BitOffs>152</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_14</Name>
+									<Type>BYTE</Type>
+									<BitOffs>160</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_15</Name>
+									<Type>BYTE</Type>
+									<BitOffs>168</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_16</Name>
+									<Type>BYTE</Type>
+									<BitOffs>176</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_17</Name>
+									<Type>BYTE</Type>
+									<BitOffs>184</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_18</Name>
+									<Type>BYTE</Type>
+									<BitOffs>192</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_19</Name>
+									<Type>BYTE</Type>
+									<BitOffs>200</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_20</Name>
+									<Type>BYTE</Type>
+									<BitOffs>208</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_21</Name>
+									<Type>BYTE</Type>
+									<BitOffs>216</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_22</Name>
+									<Type>BYTE</Type>
+									<BitOffs>224</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_23</Name>
+									<Type>BYTE</Type>
+									<BitOffs>232</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_24</Name>
+									<Type>BYTE</Type>
+									<BitOffs>240</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_25</Name>
+									<Type>BYTE</Type>
+									<BitOffs>248</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_26</Name>
+									<Type>BYTE</Type>
+									<BitOffs>256</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_27</Name>
+									<Type>BYTE</Type>
+									<BitOffs>264</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_28</Name>
+									<Type>BYTE</Type>
+									<BitOffs>272</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_29</Name>
+									<Type>BYTE</Type>
+									<BitOffs>280</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_30</Name>
+									<Type>BYTE</Type>
+									<BitOffs>288</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_31</Name>
+									<Type>BYTE</Type>
+									<BitOffs>296</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_32</Name>
+									<Type>BYTE</Type>
+									<BitOffs>304</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_33</Name>
+									<Type>BYTE</Type>
+									<BitOffs>312</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_34</Name>
+									<Type>BYTE</Type>
+									<BitOffs>320</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_35</Name>
+									<Type>BYTE</Type>
+									<BitOffs>328</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_36</Name>
+									<Type>BYTE</Type>
+									<BitOffs>336</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_37</Name>
+									<Type>BYTE</Type>
+									<BitOffs>344</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_38</Name>
+									<Type>BYTE</Type>
+									<BitOffs>352</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_39</Name>
+									<Type>BYTE</Type>
+									<BitOffs>360</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_40</Name>
+									<Type>BYTE</Type>
+									<BitOffs>368</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_41</Name>
+									<Type>BYTE</Type>
+									<BitOffs>376</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_42</Name>
+									<Type>BYTE</Type>
+									<BitOffs>384</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_43</Name>
+									<Type>BYTE</Type>
+									<BitOffs>392</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_44</Name>
+									<Type>BYTE</Type>
+									<BitOffs>400</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_45</Name>
+									<Type>BYTE</Type>
+									<BitOffs>408</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_46</Name>
+									<Type>BYTE</Type>
+									<BitOffs>416</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_47</Name>
+									<Type>BYTE</Type>
+									<BitOffs>424</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_48</Name>
+									<Type>BYTE</Type>
+									<BitOffs>432</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_49</Name>
+									<Type>BYTE</Type>
+									<BitOffs>440</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_50</Name>
+									<Type>BYTE</Type>
+									<BitOffs>448</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_51</Name>
+									<Type>BYTE</Type>
+									<BitOffs>456</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_52</Name>
+									<Type>BYTE</Type>
+									<BitOffs>464</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_53</Name>
+									<Type>BYTE</Type>
+									<BitOffs>472</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_54</Name>
+									<Type>BYTE</Type>
+									<BitOffs>480</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_55</Name>
+									<Type>BYTE</Type>
+									<BitOffs>488</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_56</Name>
+									<Type>BYTE</Type>
+									<BitOffs>496</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_57</Name>
+									<Type>BYTE</Type>
+									<BitOffs>504</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_58</Name>
+									<Type>BYTE</Type>
+									<BitOffs>512</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_59</Name>
+									<Type>BYTE</Type>
+									<BitOffs>520</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_60</Name>
+									<Type>BYTE</Type>
+									<BitOffs>528</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_61</Name>
+									<Type>BYTE</Type>
+									<BitOffs>536</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_62</Name>
+									<Type>BYTE</Type>
+									<BitOffs>544</BitOffs>
+								</Var>
+								<Var>
+									<Name>Assembly 1 ^ Inputs ^ values_63</Name>
+									<Type>BYTE</Type>
+									<BitOffs>552</BitOffs>
+								</Var>
+							</Vars>
+						</MasterConnection>
+					</EthernetIp>
+				</Box>
+				<Ethernet DeviceDesc="EL6652 EtherNet/IP Scanner (Master)"/>
+				<EtherNetIPMasterDev m_EthIpMasterDevPar="06000000446576696365203620284543415420454950205363616e6e65722028454c36360c0000006c000000fa19000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010527cac60a0ba8c000ffffff000000000000800001001e000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+			</Device>
+		</Io>
+	</Project>
+	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500870000403}" Id="#x02030010"/>
+		<OwnerA Name="TIPC^ads_com_sample^ads_com_sample Instance">
+			<OwnerB Name="TIID^Device 6 (ECAT EIP Scanner (EL6652))^Box 5 (Box 1 (TC EtherNet/IP Slave))">
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_22" Size="8" OffsA="176"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_23" Size="8" OffsA="184"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_24" Size="8" OffsA="192"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_25" Size="8" OffsA="200"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_26" Size="8" OffsA="208"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_27" Size="8" OffsA="216"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_28" Size="8" OffsA="224"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_29" Size="8" OffsA="232"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_30" Size="8" OffsA="240"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_31" Size="8" OffsA="248"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_32" Size="8" OffsA="256"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_33" Size="8" OffsA="264"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_34" Size="8" OffsA="272"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_35" Size="8" OffsA="280"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_36" Size="8" OffsA="288"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_37" Size="8" OffsA="296"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_38" Size="8" OffsA="304"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_39" Size="8" OffsA="312"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_40" Size="8" OffsA="320"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_41" Size="8" OffsA="328"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_42" Size="8" OffsA="336"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_43" Size="8" OffsA="344"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_44" Size="8" OffsA="352"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_45" Size="8" OffsA="360"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_46" Size="8" OffsA="368"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_47" Size="8" OffsA="376"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_48" Size="8" OffsA="384"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_49" Size="8" OffsA="392"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_50" Size="8" OffsA="400"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_51" Size="8" OffsA="408"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_52" Size="8" OffsA="416"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_53" Size="8" OffsA="424"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_54" Size="8" OffsA="432"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_55" Size="8" OffsA="440"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_56" Size="8" OffsA="448"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_57" Size="8" OffsA="456"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_58" Size="8" OffsA="464"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_59" Size="8" OffsA="472"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_60" Size="8" OffsA="480"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_61" Size="8" OffsA="488"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_62" Size="8" OffsA="496"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_63" Size="8" OffsA="504"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Inputs^EIP.eip_input" VarB="Connection 1 (Input/Output)^Inputs^Assembly 1 ^ Outputs ^ values_9" Size="8" OffsA="72"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_22" Size="8" OffsA="176"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_23" Size="8" OffsA="184"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_24" Size="8" OffsA="192"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_25" Size="8" OffsA="200"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_26" Size="8" OffsA="208"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_27" Size="8" OffsA="216"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_28" Size="8" OffsA="224"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_29" Size="8" OffsA="232"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_30" Size="8" OffsA="240"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_31" Size="8" OffsA="248"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_32" Size="8" OffsA="256"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_33" Size="8" OffsA="264"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_34" Size="8" OffsA="272"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_35" Size="8" OffsA="280"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_36" Size="8" OffsA="288"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_37" Size="8" OffsA="296"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_38" Size="8" OffsA="304"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_39" Size="8" OffsA="312"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_40" Size="8" OffsA="320"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_41" Size="8" OffsA="328"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_42" Size="8" OffsA="336"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_43" Size="8" OffsA="344"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_44" Size="8" OffsA="352"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_45" Size="8" OffsA="360"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_46" Size="8" OffsA="368"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_47" Size="8" OffsA="376"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_48" Size="8" OffsA="384"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_49" Size="8" OffsA="392"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_50" Size="8" OffsA="400"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_51" Size="8" OffsA="408"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_52" Size="8" OffsA="416"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_53" Size="8" OffsA="424"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_54" Size="8" OffsA="432"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_55" Size="8" OffsA="440"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_56" Size="8" OffsA="448"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_57" Size="8" OffsA="456"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_58" Size="8" OffsA="464"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_59" Size="8" OffsA="472"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_60" Size="8" OffsA="480"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_61" Size="8" OffsA="488"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_62" Size="8" OffsA="496"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_63" Size="8" OffsA="504"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Outputs^EIP.eip_output" VarB="Connection 1 (Input/Output)^Outputs^Assembly 1 ^ Inputs ^ values_9" Size="8" OffsA="72"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmProject>

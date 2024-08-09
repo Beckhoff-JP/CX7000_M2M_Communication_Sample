@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="EIP" Id="{c4a01dec-e004-4c77-adbe-3b40a0c27822}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM EIP
+VAR
+	eip_input AT%I* 	: ARRAY[0..63] OF BYTE;
+	eip_output AT%Q* 	: ARRAY[0..63] OF BYTE;
+	
+	i :UINT;
+	counter : UINT;
+	diff : BYTE;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF counter > 255 THEN
+	counter := 0;
+ELSE
+	counter := counter + 1;
+END_IF
+
+FOR i := 0 TO 63 DO
+	eip_output[i] := UINT_TO_BYTE(counter);
+END_FOR
+
+diff := eip_output[1] - eip_input[1];]]></ST>
+    </Implementation>
+    <LineIds Name="EIP">
+      <LineId Id="20" Count="3" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="11" Count="1" />
+      <LineId Id="18" Count="0" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="26" Count="0" />
+      <LineId Id="25" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

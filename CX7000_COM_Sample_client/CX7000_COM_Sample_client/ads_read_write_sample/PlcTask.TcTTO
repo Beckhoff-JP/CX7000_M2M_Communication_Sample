@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Task Name="PlcTask" Id="{0a9a8750-7d21-451d-8509-220f656c92d1}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>10000</CycleTime>
+    <Priority>20</Priority>
+    <PouCall>
+      <Name>ADS_Read</Name>
+    </PouCall>
+    <PouCall>
+      <Name>ADS_Write</Name>
+    </PouCall>
+    <PouCall>
+      <Name>EIP_COM</Name>
+    </PouCall>
+    <TaskFBGuid>{206498e2-3f28-47c6-8bae-684d1df4b84a}</TaskFBGuid>
+    <Fb_init>{1a48e295-8c60-4ffb-b6aa-a4a05ffb01e6}</Fb_init>
+    <Fb_exit>{ddb21b49-0ade-4132-9d29-df52c5a2c3cb}</Fb_exit>
+    <CycleUpdate>{f29492b1-eac9-4eeb-97a7-49cccf62e506}</CycleUpdate>
+    <PostCycleUpdate>{92783139-02d7-4f35-90ec-e5b46fc03a39}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="ADS_Write" Id="{642ab31f-1171-4d59-8231-a63c06abbb4a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ADS_Write
+VAR
+   fbWriteInd  : ADSWRITEINDEX;
+   fbWriteRes  : ADSWRITERES;
+   sNetId      : T_AmsNetID;
+   nPort       : T_AmsPort;
+   nInvokeId   : UDINT;
+   nIdxGrp     : UDINT;
+   nIdxOffs    : UDINT;
+   cbWrite     : UDINT;(* Byte size of written data *)
+   pWrite      : PVOID;(* Pointer to written data buffer *)
+   nResult     : UDINT;(* Write indication result error code *)
+   arrInt      : ARRAY[0..9] OF INT;(* Server data *)
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbWriteRes( RESPOND := FALSE );(* Reset response function block *)
+fbWriteInd( CLEAR := FALSE );(* Trigger indication function block *)
+IF ( fbWriteInd.VALID ) THEN
+   
+   sNetId       := fbWriteInd.NETID;
+   nPort        := fbWriteInd.PORT;
+   nInvokeId    := fbWriteInd.INVOKEID;
+   nIdxGrp      := fbWriteInd.IDXGRP;
+   nIdxOffs     := fbWriteInd.IDXOFFS;
+   cbWrite      := fbWriteInd.LENGTH;
+   pWrite       := fbWriteInd.DATAADDR;
+   nResult      := DEVICE_SRVNOTSUPP;
+
+   CASE nIdxGrp OF
+      16#80000005:
+         CASE nIdxOffs OF
+            16#00000000:
+               IF cbWrite <= SIZEOF( arrInt ) THEN
+                  MEMCPY( ADR( arrInt ), pWrite, MIN( cbWrite, SIZEOF(arrInt) ) );
+                  nResult := NOERR;
+               ELSE(* ADS error (example): Invalid size *)
+                  nResult := DEVICE_INVALIDSIZE;
+               END_IF
+         ELSE(* ADS error (example): Invalid index offset *)
+            nResult := DEVICE_INVALIDOFFSET;
+         END_CASE
+   ELSE(* ADS error (example): Invalid index group *)
+      nResult := DEVICE_INVALIDGRP;
+   END_CASE
+
+   fbWriteRes( NETID := sNetId,
+            PORT := nPort,
+            INVOKEID := nInvokeId,
+            RESULT := nResult,
+            RESPOND := TRUE ); (* Send write response *)
+
+   fbWriteInd( CLEAR := TRUE ); (* Clear indication entry *)
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="ADS_Write">
+      <LineId Id="17" Count="36" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

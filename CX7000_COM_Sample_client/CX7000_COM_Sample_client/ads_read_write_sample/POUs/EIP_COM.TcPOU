@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="EIP_COM" Id="{207ce353-6c4e-4027-a24a-2864afddaf38}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM EIP_COM
+VAR
+	eip_input AT%I* : ARRAY [0..63] OF BYTE;
+	eip_output AT%Q* : ARRAY [0..63] OF BYTE;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[eip_output := eip_input;]]></ST>
+    </Implementation>
+    <LineIds Name="EIP_COM">
+      <LineId Id="11" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

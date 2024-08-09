@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="ADS_Write" Id="{72d1d78b-d343-4e83-858e-939fcc9180b1}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ADS_Write
+VAR
+	fbWriteReq   : ADSWRITE := ( NETID := '', PORT := 851, TMOUT := DEFAULT_ADS_TIMEOUT );
+	bWrite       : BOOL;(* Rising edge at this variable starts command execution *)
+	nWriteState  : BYTE;
+	bBusy        : BOOL;
+	bError       : BOOL;
+	nErrID       : UDINT;
+	arrInt       : ARRAY[0..9] OF INT;(* Server data to be written *)
+	i            : INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbWriteReq.NETID := '5.143.107.166.1.1'; // CX7000 target NetID
+
+FOR i := 0 TO 9 DO
+	arrInt[i] := i;
+END_FOR
+
+CASE nWriteState OF
+	
+   0:
+      IF bWrite THEN
+         bWrite := FALSE;
+         
+         bBusy := TRUE;
+         bError := FALSE;
+         nErrID := 0;
+         
+         fbWriteReq( WRITE := FALSE );
+         fbWriteReq( IDXGRP := 16#80000005, IDXOFFS := 0, 
+                  LEN := SIZEOF( arrInt ), SRCADDR := ADR( arrInt ), 
+                  WRITE := TRUE );
+         nWriteState := 1;            
+      END_IF
+      
+   1:
+      fbWriteReq( WRITE := FALSE, BUSY=>bBusy, ERR=>bError, ERRID=>nErrID );
+      IF NOT bBusy THEN
+         IF NOT bError THEN
+            nWriteState := 0;(* Success *)
+         ELSE
+            nWriteState := 100;(* Error *)
+         END_IF
+      END_IF
+
+   100:(* TODO::Implement error handler *)
+      nWriteState := 0;
+   
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="ADS_Write">
+      <LineId Id="44" Count="0" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="59" Count="1" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="14" Count="29" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
